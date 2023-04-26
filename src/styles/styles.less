@@ -1,0 +1,31 @@
+@import  '~braft-editor/dist/index.css';
+@import  '~react-quill/dist/quill.snow.css';
+@import  '~react-medium-image-zoom/dist/styles.css';
+@import  '~antd/es/slider/style/index.less';
+
+.rich-editor br {
+	content: "";
+	display: block;
+	font-size: 100%;
+	height: 1em;
+}
+
+.rich-editor br:before {
+    content: "↲";
+    display: block;
+}
+
+.loading-block {
+    width: 100%;
+    height: 12px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    border-radius: 0;
+    background: linear-gradient(90deg, rgba(207, 216, 220, 0.2), rgba(207, 216, 220, 0.4), rgba(207, 216, 220, 0.2));
+    animation: card-loading 1.4s ease infinite;
+    background-size: 600% 600%;
+}
+
+img {
+	max-width: 100%;
+}
